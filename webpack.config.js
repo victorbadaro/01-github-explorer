@@ -11,6 +11,13 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'public')
+    },
+    port: 3000,
+    open: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html')
