@@ -1,0 +1,8 @@
+{
+  "name": "01-github-explorer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/victorbadaro/01-github-explorer.git",
+  "author": "Victor Badaró <victor.badaro@fatec.sp.gov.br>",
+  "license": "MIT"
+}
