@@ -8,7 +8,7 @@ module.exports = {
   mode: isDevelopment ? 'development' : 'production',
   devtool: isDevelopment ? 'eval-source-map' : 'source-map',
   entry: {
-    bundle: path.resolve(__dirname, 'src', 'index.jsx')
+    bundle: path.resolve(__dirname, 'src', 'index.tsx')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -16,7 +16,7 @@ module.exports = {
     clean: true
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
   devServer: {
     static: {
@@ -35,7 +35,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx$/,
+        test: /\.(j|t)sx$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
